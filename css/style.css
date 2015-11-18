@@ -9,6 +9,7 @@ body {
 }
 div {
     display: block;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -304,7 +305,8 @@ h1 {
     margin-bottom: 30px;
 }
 .about-page-block h1,
-.clients h1 {
+.clients h1,
+.contacts h1 {
     text-transform: uppercase;
     font: 50px "Ubuntu", sans-serif;
     font-weight: 300;
@@ -344,9 +346,11 @@ h1 {
 }
 .contacts {
     min-height: 790px;
-    padding-top: 180px;
-    padding-bottom: 100px;
+    padding: 100px 0;
     text-align: center;
+    color: #ebeae8;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
 }
 .contact-form {
     display: inline-block;
@@ -361,34 +365,73 @@ h1 {
 .contact-form input[type="textarea"] {
     min-height: 225px;
 }
-input .placeholder {
-    padding-left: 25px;
-    padding-top: 18px;
+.contact-form input::-webkit-input-placeholder {
+    text-indent: 25px;
+    text-transform: uppercase;
+    color: #313131;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+.contact-form input::-moz-placeholder {
+    text-indent: 25px;
+    text-transform: uppercase;
+    color: #313131;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+.contact-form input:-moz-placeholder {
+    text-indent: 25px;
+    text-transform: uppercase;
+    color: #313131;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+.contact-form input:-ms-placeholder {
+    text-indent: 25px;
+    text-transform: uppercase;
+    color: #313131;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+.contact-form input[type="submit"] {
+    height: 46px;
+    width: 150px;
+    color: #313131;
+    font: 18px "Ubuntu", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
 }
-
-
-/*****RESPONSIVE*****/
-/*large screens*/
-@media only screen and (max-width: 1824px) {
-
+.contact-form input {
+    background-color: #ebeae8;
 }
-/*desctops and laptops*/
-@media only screen and (max-width: 1224px) {
-    .container {
-        width: 85%;
-    }
+.contacts-inner {
+    position: relative;
 }
-/*ipads portr and lands*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .container {
-        width: 100%;
-    }
+.adress,
+.download-brif {
+    position: absolute;
+    left: 0;
+    text-align: left;
 }
-/*smartphones portr and lands*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .container {
-        width: 100%;
-    }
+.adress {
+    top: 0;
 }
-/*****RESPONSIVE*****/
+.download-brif {
+    bottom: 140px;
+    margin-bottom: 25px;
+}
+.download-brif a {
+    color: #ebeae8;
+}
+.download-brif img {
+    width: 35px;
+    height: 45px;
+    float: left;
+    margin-right: 16px;
+}
+.contacts h1 {
+    margin: 0 0 42px 0;
+}
+.map {
+    height: 675px;
+}
