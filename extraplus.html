@@ -17,26 +17,27 @@
   </head>
   <body>
 
-    <div class="navbar">
-      <div class="navbar-inner container">
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
         <a href="index.html">
           <span class="logo"><img src="img/logo.png" alt="логотип дизайн студии ОЗидея" width=123px height=61px></span>
         </a>
         <!-- nav -->
-        <ul class="main-menu">
-          <li><a href="./about.html">о нас</a></li>
-          <li><a href="./about.html#social">социальная активность</a></li>
-          <li><a href="./about.html#contacts">контакты</a></li>
-        </ul>
-        <ul class="right-menu">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav">
+            <li><a href="./about.html">о нас</a></li>
+            <li><a href="./about.html#social">социальная активность</a></li>
+            <li><a href="./about.html#contacts">контакты</a></li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
           <li class="lang show">
             <a href="#">EN</a>
           </li>
-          <li class="burger show">
-            <a href="#"><span class="burger-inside"></span></a>
-          </li>
-          <li class="close">
-            <a href="#">&times</a>
+          <li>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+            </button>
           </li>
         </ul>
       </div>
@@ -44,41 +45,44 @@
 
     <div class="container">
 
-      <div class="post-description">
-        <H1>Разработка логотипа для клининговой компании Еxtra Plus.</H1>
-        <ul class="tags">
-          <li><a href="#">логотипы</a></li>
-        </ul>
-        <div class="the-description">
-          <p>Логотип клининговой компании Еxtra Plus. В основе логотипа заложены ассоциативные образы, формы и цветовая гамма, связанные с предоставлением данных услуг, а именно: пена, пузыри, круговое движение руки с мочалкой, оставляющие пенный градиентный след.</p>
-        </div>
-        <div class="autors">
-          <p>Арт-директор: Наталия Закашанская</p>
-          <p>Дизайнер: Мария Маринова</p>
+      <div class="post-description row">
+        <div class="col-md-8">
+          <H1>Разработка логотипа для клининговой компании Еxtra Plus.</H1>
+          <ul class="tags">
+            <li><a href="#">логотипы</a></li>
+          </ul>
+          <div class="the-description">
+            <p>Логотип клининговой компании Еxtra Plus. В основе логотипа заложены ассоциативные образы, формы и цветовая гамма, связанные с предоставлением данных услуг, а именно: пена, пузыри, круговое движение руки с мочалкой, оставляющие пенный градиентный след.</p>
+          </div>
+          <div class="autors">
+            <p>Арт-директор: Наталия Закашанская</p>
+            <p>Дизайнер: Мария Маринова</p>
+          </div>
         </div>
       </div>
 
-      <div class="project-container clearfix" >
-        <div class="project-img semi-size">
+      <div class="project-container row" >
+        <div class="col-xs-6">
           <img src="img/extraplus1md.jpg">
         </div>
-        <div class="project-img semi-size">
+        <div class="col-xs-6">
           <img src="img/extraplus2md.jpg">
         </div>
-        <div class="project-img full-size">
+        <div class="col-xs-12">
           <img src="img/extraplus3.jpg">
         </div>
-        <div class="project-img full-size">
+        <div class="col-xs-12">
           <img src="img/extraplus4.jpg">
         </div>
-        <div class="project-img full-size">
+        <div class="col-xs-12">
           <img src="img/extraplus5.jpg">
         </div>
-        <div class="project-img full-size">
+        <div class="col-xs-12">
           <img src="img/extraplus6.jpg">
         </div>
       </div>
     </div>
+
     <div class="footer">
       <div class="footer-inner clearfix">
         <span class="footer-contacts">+38 044 238 20 14<br><a href="mailto:idea_oz@i.ua">idea_oz@i.ua</a></span>

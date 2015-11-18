@@ -1,15 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic,500italic,500,400italic,300italic,300&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,300&subset=latin,cyrillic);
 
 * {
     margin: 0;
     padding: 0;
-}
-body {
-    background-color: #040404;
-}
-div {
-    display: block;
-    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -20,24 +13,8 @@ h1 {
     font: 25px/30px Ubuntu, sans-serif;
     font-weight: 300;
 }
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.container {
-    width: 72.9166666666%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-.full-size {
-    width: 100%;
-}
-.third-size {
-    width: 33.3333333333333%;
-}
-.semi-size {
-    width: 50%;
+body {
+    line-height: 1.3;
 }
 .container img,
 .about-back img {
@@ -45,26 +22,12 @@ h1 {
     height: auto;
     height: auto\9; /*ie8*/
 }
-.container ul,
-.tags {
-    list-style: none;
-    padding: 0;
-}
 .navbar {
     background-color: #ffdb01;
+    min-height: 100px;
 }
-.navbar-inner, .navbar {
-    position: relative;
-    min-height: 110px;
-    -webkit-transition: min-height 0.7s;
-    -moz-transition: min-height 0.7s;
-    transition: min-height 0.7s;
-}
-.big-nav {
-    min-height: 190px;
-    -webkit-transition: min-height 0.7s;
-    -moz-transition: min-height 0.7s;
-    transition: min-height 0.7s;
+.navbar-toggle {
+    display: inline-block;
 }
 .project-container {
     margin-bottom: 90px;
@@ -113,41 +76,8 @@ h1 {
 .logo:hover {
     opacity: 0.6;
 }
-.right-menu {
-    float: right;
-    position: relative;
-    width: 110px;
-    margin-top: 48px;
-}
-.burger {
-    position: absolute;
-    right: 0;
-    height: 15px;
-    width: 34px;
-    opacity: 0;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    cursor: pointer;
-    z-index: 100;
-}
-.burger-inside {
-    display: block;
-    height: 3px;
-    background-color: black;
-    width: 34px;
-    margin-top: 6px;
-}
 .main-menu li {
     margin-bottom: 20px;
-}
-.close {
-    font: 3.3em Verdana , sans-serif;
-    opacity: 0;
-    position: absolute;
-    right: -7px;
-    top: -25px;
-    cursor: pointer;
-    z-index: 10;
 }
 .lang {
     position: absolute;
@@ -238,19 +168,15 @@ h1 {
     background-color: white;
 }
 .article-inner p {
-    font-weight: 300;
-    font: 13px Ubuntu, sans-serif;
+    color: black;
+    font-weight: 400;
+    font: 24px Ubuntu, sans-serif;
 }
 .article-inner {
     margin: 80px 90px 60px 90px;
 }
-.project-img,
-.article {
-    float: left;
-}
 .post-description,
 .about-page-block {
-    min-height: 440px;
     margin-top: 84px;
     padding-left: 50px;
 }
@@ -263,7 +189,7 @@ h1 {
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: underline;
-    color: white;
+    color: #ebeae8;
 }
 .tags li {
     margin-right: 40px;
@@ -279,17 +205,15 @@ h1 {
 .autors p,
 .about-page-block p {
     font: 18px "Ubuntu", sans-serif;
-    color: white;
+    color: #ebeae8;
     font-weight: 300;
     margin: 0;
 }
 .the-description p {
-    max-width: 60%;
     margin: 0 0 20px 0;
 }
 .autors {
-    max-width: 300px;
-    border-top: 2px solid white;
+    border-top: 2px solid #ebeae8;
     padding:26px 0 100px 0;
 }
 .tags {

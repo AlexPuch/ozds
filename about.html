@@ -17,26 +17,27 @@
   </head>
   <body>
 
-    <div class="navbar">
-      <div class="navbar-inner container">
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
         <a href="index.html">
           <span class="logo"><img src="img/logo.png" alt="логотип дизайн студии ОЗидея" width=123px height=61px></span>
         </a>
         <!-- nav -->
-        <ul class="main-menu">
-          <li><a href="./about.html">о нас</a></li>
-          <li><a href="./about.html#social">социальная активность</a></li>
-          <li><a href="./about.html#contacts">контакты</a></li>
-        </ul>
-        <ul class="right-menu">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav">
+            <li><a href="./about.html">о нас</a></li>
+            <li><a href="./about.html#social">социальная активность</a></li>
+            <li><a href="./about.html#contacts">контакты</a></li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
           <li class="lang show">
             <a href="#">EN</a>
           </li>
-          <li class="burger show">
-            <a href="#"><span class="burger-inside"></span></a>
-          </li>
-          <li class="close">
-            <a href="#">&times</a>
+          <li>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+            </button>
           </li>
         </ul>
       </div>
