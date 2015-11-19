@@ -26,8 +26,21 @@ body {
     background-color: #ffdb01;
     min-height: 100px;
 }
-.navbar-toggle {
-    display: inline-block;
+.menu,
+.navbar-nav li {
+    padding: 29px 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 11px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    color: #666666;
+    background-color: transparent;
+}
+.nav>li>a:visited {
+    outline:none;
 }
 .project-container {
     margin-bottom: 90px;
@@ -42,7 +55,35 @@ body {
     float: left;
 }
 .filter {
-    min-height: 90px;
+    position: relative;
+    margin-top: 106px;
+    height: 100px;
+}
+.filter-title {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    color: #ffdb01;
+}
+.filter-inner {
+    height: 40px;
+    width: 100%;
+}
+.filter-inner a {
+    font: 13px "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffdb01;
+    margin-left: 15px;
+    float: right;
+}
+
+.filter-inner a:active,
+.filter-inner a:hover {
+    text-decoration: underline;
 }
 .footer {
     height: 130px;
@@ -74,7 +115,7 @@ body {
     max-width: 123px;
 }
 .logo:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .main-menu li {
     margin-bottom: 20px;
@@ -358,4 +399,7 @@ body {
 }
 .map {
     height: 675px;
+}
+.collapse-width {
+    width: 45%;
 }
