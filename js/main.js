@@ -1,11 +1,11 @@
 //collapse
 $(document).on("show.bs.collapse","#myNavbar", function() {
   $(".lang").removeClass("show");
-  $(".burger").html('<span class="glyphicon glyphicon-remove"></span>');
+  $(".burger").html('<span>&times;</span>');
 });
 $(document).on("hide.bs.collapse","#myNavbar", function() {
   $(".lang").addClass("show");
-  $(".burger").html('<span class="glyphicon glyphicon-menu-humburger"></span>');
+  $(".burger").html('<span class="flaticon-menu45"></span>');
 });
 
 // MADAL FIX --- add paddint to element with position:fixed
