@@ -33,7 +33,7 @@ body {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 11px;
+    padding: 8px;
 }
 .nav>li>a:hover, .nav>li>a:focus {
     color: #666666;
@@ -56,16 +56,20 @@ body {
 }
 .filter {
     position: relative;
-    margin-top: 106px;
     height: 100px;
+    margin-top: 106px;
 }
-.filter-title {
+.filter span {
     position: absolute;
     right: 0;
     bottom: 25px;
+    cursor: pointer;
     font-family: "Ubuntu", sans-serif;
     text-transform: uppercase;
     color: #ffdb01;
+}
+.filter span:hover {
+    opacity: 0.7;
 }
 .filter-inner {
     height: 40px;
@@ -90,24 +94,6 @@ body {
     margin: 0 auto;
     background-color: #242321;
     text-align: center;
-}
-.project-description {
-    position: absolute;
-    padding: 55px 50px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: 10;
-    color: #f1d004;
-    background-color: rgba(4,4,4,0.76);
-    font: 25px/30px Ubuntu, sans-serif;
-    font-weight: 300;
-    -webkit-transition: opacity 0.5s ;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
 }
 .logo {
     position: absolute;
@@ -402,4 +388,107 @@ body {
 }
 .collapse-width {
     width: 45%;
+}
+/*---start hover effect---*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #f1d004;
+  border-top: 1px solid #f1d004;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #f1d004;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #f1d004;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect a {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+}
+/*---end hover effect---*/
+.modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.modal-body {
+    padding: 0;
 }

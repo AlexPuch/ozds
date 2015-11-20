@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OZidea Design Studio</title>
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,8 +15,8 @@
     <!--[endif]-->
   </head>
   <body>
-
-    <div class="navbar navbar-fixed-top">
+    <!--start navigation-->
+    <div class="navbar navbar-fixed-top header">
       <div class="container">
         <div class="navbar-header">
           <a href="index.html">
@@ -30,91 +29,180 @@
             <a href="#">EN</a>
           </li>
           <li>
-            <a class="burger" data-toggle="collapse" href="#myNavbar" aria-expanded="false" aria-controls="myNavbar"></a>
+            <a class="burger" data-toggle="collapse" href="#myNavbar" aria-expanded="false" aria-controls="myNavbar">BUR</a>
           </li>
         </ul>
         <div class="collapse navbar-right collapse-width" id="myNavbar">
           <ul class="menu nav col-xs-5">
             <li><a href="./about.html">о нас</a></li>
             <li><a href="./about.html#social">социальная активность</a></li>
+            <li><a href="./about.html#social">блог</a></li>
             <li><a href="./about.html#contacts">контакты</a></li>
           </ul>
         </div>
       </div>
     </div>
-
+    <!--end navigation-->
     <div class="container">
-
-      <div class="filter">
-        <a class="filter-title" data-toggle="collapse" href="#myFilter" aria-expanded="false" aria-controls="myFilter">
-          <span class="glyphicon glyphicon-menu-triangle-bottom"></span>ФИЛЬТР
-        </a>
+      <!--start second navigation-->
+      <div class="row">
+        <div class="filter" data-toggle="collapse" href="#myFilter" aria-expanded="false" aria-controls="myFilter">
+          <span class="glyphicon glyphicon-menu-triangle-bottom"></span><span>ФИЛЬТР</span>
+        </div>
+        <div class="filter-inner collapse" id="myFilter">
+          <a href="./logos/">логотип</a>
+          <a href="./identity/">фирменный стиль</a>
+          <a href="./posters/">плакат</a>
+          <a href="./catalogs/">буклет</a>
+          <a href="./pack/">упаковка</a>
+        </div>
       </div>
-      <div class="filter-inner collapse" id="myFilter">
-        <a href="./logos/">логотип</a>
-        <a href="./identity/">фирменный стиль</a>
-        <a href="./posters/">плакат</a>
-        <a href="./catalogs/">буклет</a>
-        <a href="./pack/">упаковка</a>
-      </div>
-
+      <!--end second navigation-->
       <div class="project-container row" >
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание первого проекта со всеми вытекающими.</span>
-            <span><img src="img/project1.png" alt="проект 1"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project1.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание первого проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="./extraplus.html">
-            <span class="project-description">Логотип для клининговой компании Extra Plus.</span>
-            <span><img src="img/project2.png" alt="проект 2"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project2.png" alt="">
+            <div class="overlay">
+              <h2>Логотип для клининговой компании Extra Plus.</h2>
+              <a href="./extraplus.html">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание третьего проекта со всеми вытекающими.</span>
-            <span><img src="img/project3.png" alt="проект 3"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project3.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание третьего проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание четвертого проекта со всеми вытекающими.</span>
-            <span><img src="img/project4.png" alt="проект41"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project4.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание четвертого проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="./cherity.html">
-            <span class="project-description">Полное описание пятого проекта со всеми вытекающими.</span>
-            <span><img src="img/project5.png" alt="проект 5"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project5.png" alt="">
+            <div class="overlay">
+              <h2>Логотип для мероприятия Cherity weekend.</h2>
+              <a href="./cherity.html" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание шестого проекта со всеми вытекающими.</span>
-            <span><img src="img/project6.png" alt="проект 6"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project6.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание шестого проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-         <a href="#">
-            <span class="project-description">Полное описание седьмого проекта со всеми вытекающими.</span>
-            <span><img src="img/project7.png" alt="проект 7"></span>
-         </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project7.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание седьмого проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание предпоследнего проекта со всеми вытекающими.</span>
-            <span><img src="img/project8.png" alt="проект 8"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project8.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание предпоследнего проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
-        <div class="project col-xs-12 col-md-4">
-          <a href="#">
-            <span class="project-description">Полное описание последнего проекта со всеми вытекающими.</span>
-            <span><img src="img/project9.png" alt="проект 9"></span>
-          </a>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/project9.png" alt="">
+            <div class="overlay">
+              <h2>Полное описание последнего проекта со всеми вытекающими.</h2>
+              <a href="#" data-toggle="modal" data-target="#modalView">подробнее</a>
+            </div>
+          </div>
         </div>
       </div>
+      <!--start modal-->
+      <div class="modal fade" id="modalView">
+        <div class="container modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-body">
+
+            <div class="container">
+
+              <div class="post-description row">
+                <div class="col-md-8">
+                  <H1>Логотип для мероприятия<br>Cherity weekend</H1>
+                  <ul class="tags">
+                    <li><a href="#">логотипы</a></li>
+                    <li><a href="#">социальный проект</a></li>
+                  </ul>
+                  <div class="the-description">
+                    <p>Логотип для благотворительного мероприятия Charity Weekend, которое собирает средства на помощь нуждающимся деткам. В основу логотипа был вложен собирательный образ детского творчества - «Каляки-маляки». Круговое движение, как символ бесконечной, постоянной помощи.</p>
+                  </div>
+                  <div class="autors">
+                    <p>Арт-директор: Мария Омельчук</p>
+                    <p>Дизайнер: Мария Маринова</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-container row" >
+                <div class="col-xs-12">
+                  <img src="img/charity1.jpg">
+                </div>
+                <div class="col-xs-12">
+                  <img src="img/charity2.jpg">
+                </div>
+                <div class="col-xs-4">
+                  <img src="img/charity3sm.jpg">
+                </div>
+                <div class="col-xs-4">
+                  <img src="img/charity4sm.jpg">
+                </div>
+                <div class="col-xs-4">
+                  <img src="img/charity5sm.jpg">
+                </div>
+                <div class="col-xs-12">
+                  <img src="img/charity6.jpg">
+                </div>
+                <div class="article col-xs-12">
+                  <div class="article-inner">
+                    <p>"Charity weekend" - це не "прийти і просто віддати гроші на благодійність". Це привід провести час приємно і з користю - насамперед для себе. Тому що кожен "Charity weekend" - це три-чотири годиниу веселій компанії, майстер-класи на темиб які хвилюють всіх жінокб а ще частування та приємні сюрпризи".</p>
+                    <p>- <b>Маша Єфросініна</b></p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <img src="img/charity7.jpg">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--end modal-->
     </div>
+    <!--start footer-->
     <div class="footer">
       <div class="footer-inner clearfix">
         <span class="footer-contacts">+38 044 238 20 14<br><a href="mailto:idea_oz@i.ua">idea_oz@i.ua</a></span>
@@ -126,7 +214,7 @@
         <span class="footer-order"><a href="#">сделать<br>заказ</a></span>
       </div>
     </div>
-
+    <!--end footer-->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
