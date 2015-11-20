@@ -25,7 +25,7 @@ $(document).on('hidden.bs.modal', function (){
 //Google maps
 var map;
 var marker;
-var theatre = new google.maps.LatLng(50.429992, 30.537558);
+var theatre = new google.maps.LatLng(50.469494,30.466671);
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -45,20 +45,11 @@ function initialize() {
         ]
     },
     {
-        "featureType": "landscape",
+        "featureType": "poi.park",
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#f5f5f5"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.man_made",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
+                "color": "#a1dba6"
             }
         ]
     },
@@ -67,12 +58,15 @@ function initialize() {
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#919191"
+                "visibility": "on"
+            },
+            {
+                "color": "#fff36b"
             }
         ]
     },
     {
-        "featureType": "road.highway",
+        "featureType": "road",
         "elementType": "geometry.stroke",
         "stylers": [
             {
@@ -81,17 +75,8 @@ function initialize() {
         ]
     },
     {
-        "featureType": "road.highway.controlled_access",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#f8f8f8"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway.controlled_access",
-        "elementType": "geometry.stroke",
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
         "stylers": [
             {
                 "visibility": "off"
@@ -100,46 +85,37 @@ function initialize() {
     },
     {
         "featureType": "road.arterial",
-        "elementType": "geometry.fill",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#f7f7f7"
+                "weight": "10.00"
             }
         ]
     },
     {
         "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "visibility": "off"
+                "weight": "10.00"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "weight": "0.01"
             }
         ]
     },
     {
         "featureType": "road.local",
-        "elementType": "geometry.fill",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#e1e1e1"
+                "weight": "3.64"
             }
         ]
     },
@@ -148,10 +124,10 @@ function initialize() {
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#8ac4bf"
             },
             {
-                "saturation": "0"
+                "visibility": "on"
             }
         ]
     }
@@ -178,7 +154,7 @@ function initialize() {
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
- var image = 'images/marker.png'
+ var image = 'img/marker.png'
  marker = new google.maps.Marker({
  position: theatre,
  title: "OZIDEA design studio",
@@ -197,5 +173,7 @@ function toggleBounce() {
   } else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
-};
+}
 
+// google maps initialize
+initialize();

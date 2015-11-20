@@ -48,6 +48,10 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover, a:focus {
+    color: none;
+    text-decoration: none;
+}
 h1 {
     color: #f1d004;
     font: 25px/30px Ubuntu, sans-serif;
@@ -166,9 +170,18 @@ body {
     float: left;
 }
 .social-block {
-    width: 176px;
     border-left: 2px solid #f0cf03;
     border-right: 2px solid #f0cf03;
+}
+.contacts .social-block {
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    left: -20px;
+    color: #ebeae8;
+}
+.contacts .social-block span {
+    color: #ebeae8;
 }
 .footer-order {
     margin-left: 26px;
@@ -192,21 +205,10 @@ body {
 .footer-inner {
     margin-top: 40px;
 }
-.icon-facebook {
-    background-image:url(../img/iconfacebook.png);
-}
-.icon-insta {
-    background-image:url(../img/iconinsta.png);
-}
-.icon-youtube {
-    background-image:url(../img/iconyoutube.png);
-}
-.icon-facebook,
-.icon-insta,
-.icon-youtube {
-    display: inline-block;
-    height: 50px;
-    width: 44px;
+.social-block span {
+    font-size: 35px;
+    color: #f0cf03;
+    padding:10px;
 }
 .show {
     opacity: 1;
