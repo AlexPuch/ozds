@@ -1089,7 +1089,7 @@ html {
 }
 body {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.42857143;
   color: #ebeae8;
   background-color: #040404;
@@ -1599,10 +1599,15 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 940px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    width: 1044px;
+  }
+}
+@media (min-width: 1700px) {
   .container {
     width: 1400px;
   }

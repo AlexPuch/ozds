@@ -51,6 +51,7 @@ a {
 a:hover, a:focus {
     color: none;
     text-decoration: none;
+    outline: none;
 }
 h1 {
     color: #f1d004;
@@ -68,7 +69,7 @@ body {
 }
 .navbar {
     background-color: #ffdb01;
-    min-height: 110px;
+    min-height: 80px;
 }
 .nav>li>a {
     position: relative;
@@ -96,8 +97,8 @@ body {
 }
 .filter {
     position: relative;
-    height: 100px;
-    margin-top: 106px;
+    height: 70px;
+    margin-top: 90px;
 }
 .filter span {
     position: absolute;
@@ -130,14 +131,13 @@ body {
     text-decoration: underline;
 }
 .footer {
-    height: 130px;
-    margin: 0 auto;
+    min-height: 100px;
     background-color: #242321;
     text-align: center;
 }
 .logo {
     position: absolute;
-    max-width: 123px;
+    max-width: 90px;
 }
 .logo:hover {
     opacity: 0.7;
@@ -159,24 +159,15 @@ body {
     font: 1em "Ubuntu", sans-serif;
     text-transform: uppercase;
 }
-.footer-inner,
 .social-block {
-    display:inline-block;
-    height: 50px;
-}
-.footer-order,
-.footer-contacts,
-.social-block {
-    float: left;
-}
-.social-block {
+    min-width: 175px;
     border-left: 2px solid #f0cf03;
     border-right: 2px solid #f0cf03;
 }
 .contacts .social-block {
     border: none;
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
     left: -20px;
     color: #ebeae8;
 }
@@ -184,7 +175,7 @@ body {
     color: #ebeae8;
 }
 .footer-order {
-    margin-left: 26px;
+    margin-left: 55px;
     text-transform: uppercase;
 }
 .footer-contacts,
@@ -198,15 +189,14 @@ body {
 }
 .footer-contacts,
 .footer-order {
-    padding-top: 12px;
-    width: 134px;
+    padding-top: 5px;
     text-align: left;
 }
 .footer-inner {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .social-block span {
-    font-size: 35px;
+    font-size: 30px;
     color: #f0cf03;
     padding:10px;
 }
@@ -472,7 +462,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 14px;
   background-color: transparent;
   color: #f1d004;
   padding: 1em 0;
@@ -519,10 +509,50 @@ body {
 }
 .burger>span {
     display: inline-block;
-    min-width: 45px;
     font-size: 2.5em;
     margin-left: 60px;
+    min-width: 30px;
 }
 .header {
-    padding-top: 30px;
+    padding-top: 20px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .social-block {
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #f0cf03;
+    border-bottom: 2px solid #f0cf03;
+  }
+  .footer-contacts,
+  .social-block,
+  .footer-order {
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer-order {
+    margin-left: 0;
+  }
+  .footer-inner {
+    padding-top: 0;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  ul.nav,
+  .lang {
+    float: right;
+  }
+  ul.navbar-right {
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+  .filter span,
+  .filter-inner {
+    padding-right: 10px;
+  }
+  .menu {
+    padding-bottom: 0;
+  }
+}
+

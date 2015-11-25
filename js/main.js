@@ -1,3 +1,69 @@
+//modal view
+
+/******variant1******
+var activeProjectUrl='';
+$(document).on('click','.overlay a', function(){
+    activeProjectUrl = $(this).attr("href");
+    history.pushState({},'',activeProjectUrl); //show url as a real
+    $('#content-target').load("activeProjectUrl #project-content"); //load content
+});
+$(document).on('hidden.bs.modal', function (){
+    history.back();
+});
+
+// MADAL FIX --- add paddint to element with position:fixed
+var $targetClass = '.navbar-fixed-top',
+    myObj = {$body:$(document.body)},
+    scrollWidth = $.fn.modal.Constructor.prototype.measureScrollbar.call(myObj);
+$(document).on('show.bs.modal', function(){
+    $($targetClass).css("padding-right",scrollWidth);
+});
+$(document).on('hidden.bs.modal', function (){
+    $($targetClass).css("padding-right","0");
+});
+*/
+
+/******variant2******
+$('#content-target').load("./cherity.html", function(result) {
+    var obj = $(this).find("#project-content"),
+        html = obj.html();
+    $(this).append($("<div>").text(html));
+});
+*/
+
+/******variant3******
+/*
+(function($){
+        var http = "http:",
+            https = "https:",
+            rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script/gi,
+            proto = local.protocol,
+            otherProtoUri = new RegExp("\\b" + (proto === http ? https : http) + "(//[a-z\\d.-]+)", "gi");
+        $.fn.protocolModifyLoad = function(url, yesIKnowThisFragile, selector) {
+            var self = this;
+
+            if ( !this.length || !yesIKnowThisFragile) {
+                return this;
+            }
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                dataType: "html",
+                complite: function(res,status) {
+                    if (status === "success" || status === "notmodified") {
+                        var response = res.responseText.replace(otherProtoUri, proto + "$1");
+                        self.html( selector ?
+                            jQuery("<div").append(response.replace(rscript, "")).find(selector) : response);
+                    }
+                }
+            });
+
+            return this;
+        };
+    })(jQuery);
+*/
+
 //collapse
 $(document).on("show.bs.collapse","#myNavbar", function() {
   $(".lang").removeClass("show");
@@ -8,19 +74,6 @@ $(document).on("hide.bs.collapse","#myNavbar", function() {
   $(".burger").html('<span class="flaticon-menu45"></span>');
 });
 
-// MADAL FIX --- add paddint to element with position:fixed
-var $targetClass = '.header',
-    myObj = {$body:$(document.body)},
-    scrollWidth = $.fn.modal.Constructor.prototype.measureScrollbar.call(myObj);
-
-
-$(document).on('show.bs.modal', function(){
-    $($targetClass).css("padding-right",scrollWidth);
-});
-
-$(document).on('hidden.bs.modal', function (){
-    $($targetClass).css("padding-right","0");
-});
 
 //Google maps
 var map;
@@ -176,4 +229,5 @@ function toggleBounce() {
 }
 
 // google maps initialize
-initialize();
+$('div').hasClass('contacts') && initialize();
+
