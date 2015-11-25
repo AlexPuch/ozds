@@ -528,10 +528,15 @@ body {
   .footer-order {
     height: 60px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   .footer-order {
     margin-left: 0;
+  }
+  .social-block {
+    margin-left: 25%;
+    padding-bottom: 15px;
+    height: auto;
   }
   .footer-inner {
     padding-top: 0;
