@@ -261,41 +261,45 @@ body {
 .tags {
     margin-bottom: 55px;
 }
-.about-back {
+.about-block {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    min-height: 500px;
+}
+.about-block img {
     position: absolute;
-    left: 0;
-    right: 0;
     z-index: -5;
+    width: auto;
+    height: 100%;
 }
-.about-page-block p {
-    margin-bottom: 30px;
+.about-page p {
+    margin-bottom: 20px;
 }
-.about-page-block h1,
-.clients h1,
-.contacts h1 {
+.about-page h1 {
     text-transform: uppercase;
     font: 50px "Ubuntu", sans-serif;
     font-weight: 300;
 }
-.about-page-block h1 {
-    margin: 100px 0 50px 0;
-    max-width: 33%;
+.about-part h1 {
+    margin: 70px 0 30px 0;
+    max-width: 50%;
 }
-.about-page-block {
-    display: inline-block;
-    max-width: 66%;
-    margin-top: 0;
-    margin-bottom: 70px;
+.about-part,
+.clients-part,
+.social-part,
+.contacts {
+    padding-bottom: 70px;   
 }
 .tab {
-    margin: 100px 0 100px 70px;
+    margin: 70px 0 70px 40px;
 }
-.clients {
+.clients-part {
     text-align: center;
     min-height: 590px;
     background-color: #ebeae8;
 }
-.clients h1 {
+.clients-part h1 {
     padding: 50px 0;
     margin: 0;
     color: #313131;
