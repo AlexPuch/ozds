@@ -55,7 +55,7 @@ a:hover, a:focus {
 }
 h1 {
     color: #f1d004;
-    font: 25px/30px Ubuntu, sans-serif;
+    font: 2.083em/2.500em Ubuntu, sans-serif;
     font-weight: 300;
 }
 body {
@@ -117,7 +117,7 @@ body {
     width: 100%;
 }
 .filter-inner a {
-    font: 13px "Ubuntu", sans-serif;
+    font: 1.083em "Ubuntu", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
@@ -183,7 +183,7 @@ body {
 .footer-contacts a,
 .footer-order a {
     font-weight: 300;
-    font: 13px Ubuntu, sans-serif;
+    font: 1.083em Ubuntu, sans-serif;
     color: #f0cf03;
     text-decoration: none;
 }
@@ -196,7 +196,7 @@ body {
     padding-top: 40px;
 }
 .social-block span {
-    font-size: 30px;
+    font-size: 2.500em;
     color: #f0cf03;
     padding:10px;
 }
@@ -212,7 +212,7 @@ body {
 .article-inner p {
     color: black;
     font-weight: 400;
-    font: 24px Ubuntu, sans-serif;
+    font: 2em Ubuntu, sans-serif;
 }
 .article-inner {
     margin: 80px 90px 60px 90px;
@@ -227,7 +227,7 @@ body {
     margin-top: 70px;
 }
 .tags a {
-    font: 13px "Ubuntu", sans-serif;
+    font: 1.083em "Ubuntu", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: underline;
@@ -246,7 +246,7 @@ body {
 .post-description p,
 .autors p,
 .about-page-block p {
-    font: 18px "Ubuntu", sans-serif;
+    font: 1.500em "Ubuntu", sans-serif;
     color: #ebeae8;
     font-weight: 300;
     margin: 0;
@@ -275,20 +275,24 @@ body {
 }
 .about-page p {
     margin-bottom: 20px;
+    font-size: 1.083em;
 }
 .about-page h1 {
     text-transform: uppercase;
-    font: 50px "Ubuntu", sans-serif;
+    font: 3em "Ubuntu", sans-serif;
     font-weight: 300;
+    margin: 70px 0 30px 0;
 }
 .about-part h1 {
-    margin: 70px 0 30px 0;
     max-width: 50%;
+}
+.contacts-part h1 {
+    text-align: center;
 }
 .about-part,
 .clients-part,
 .social-part,
-.contacts {
+.contacts-part {
     padding-bottom: 70px;   
 }
 .tab {
@@ -300,7 +304,7 @@ body {
     background-color: #ebeae8;
 }
 .clients-part h1 {
-    padding: 50px 0;
+    padding: 40px 0;
     margin: 0;
     color: #313131;
 }
@@ -314,81 +318,66 @@ body {
     width: 200px;
     float: left;
 }
-.contacts {
-    min-height: 790px;
-    padding: 100px 0;
-    text-align: center;
+.contacts-part .social-block {
+    border: none;
     color: #ebeae8;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
 }
-.contact-form {
-    display: inline-block;
-    width: 660px;
+.contacts-part .social-block span {
+    color: #ebeae8;
 }
 .contact-form input {
     display: block;
     width: 100%;
-    min-height: 46px;
-    margin-bottom: 25px;
+    height: 33px;
+    margin-bottom: 20px;
 }
 .contact-form input[type="textarea"] {
-    min-height: 225px;
+    min-height: 160px;
 }
 .contact-form input::-webkit-input-placeholder {
-    text-indent: 25px;
+    text-indent: 18px;
     text-transform: uppercase;
     color: #313131;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
+    font: 14px "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 .contact-form input::-moz-placeholder {
-    text-indent: 25px;
+    text-indent: 18px;
     text-transform: uppercase;
     color: #313131;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
+    font: 14px "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 .contact-form input:-moz-placeholder {
-    text-indent: 25px;
+    text-indent: 18px;
     text-transform: uppercase;
     color: #313131;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
+    font: 14px "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 .contact-form input:-ms-placeholder {
-    text-indent: 25px;
+    text-indent: 18px;
     text-transform: uppercase;
     color: #313131;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
+    font: 14px "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 .contact-form input[type="submit"] {
     height: 46px;
     width: 150px;
     color: #313131;
-    font: 18px "Ubuntu", sans-serif;
-    font-weight: 300;
+    font: 14px "Ubuntu", sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .contact-form input {
     background-color: #ebeae8;
 }
-.contacts-inner {
-    position: relative;
-}
-.adress,
-.download-brif {
-    position: absolute;
-    left: 0;
-    text-align: left;
-}
 .adress {
-    top: 0;
+    margin-bottom: 175px;
 }
 .download-brif {
-    bottom: 140px;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
 }
 .download-brif a {
     color: #ebeae8;
@@ -400,7 +389,7 @@ body {
     margin-right: 16px;
 }
 .contacts h1 {
-    margin: 0 0 42px 0;
+    margin: 0 0 30px 0;
 }
 .map {
     height: 675px;
@@ -545,15 +534,11 @@ body {
   .footer-inner {
     padding-top: 0;
   }
-  .logo {
-    margin-left: 10px;
-  }
   ul.nav,
   .lang {
     float: right;
   }
   ul.navbar-right {
-    margin-right: 10px;
     margin-top: -10px;
   }
   .filter span,
@@ -563,5 +548,22 @@ body {
   .menu {
     padding-bottom: 0;
   }
+  .adress,
+  .download-brif {
+    margin-bottom: 0;
+    }
+  .contacts-part .social-block {
+      margin-left: 0;
+  }
+  .container {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .about-block img {
+      display: none;
+  }
+  .about-block {
+      background-color: #424242;
+  }      
 }
 
