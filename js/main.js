@@ -229,5 +229,5 @@ function toggleBounce() {
 }
 
 // google maps initialize
-$('div').hasClass('contacts') && initialize();
+$('div').hasClass('contacts-part') && initialize();
 

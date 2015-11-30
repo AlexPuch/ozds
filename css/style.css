@@ -189,7 +189,7 @@ body {
 }
 .footer-contacts,
 .footer-order {
-    padding-top: 5px;
+    padding-top: 3px;
     text-align: left;
 }
 .footer-inner {
@@ -290,7 +290,6 @@ body {
     text-align: center;
 }
 .about-part,
-.clients-part,
 .social-part,
 .contacts-part {
     padding-bottom: 70px;   
@@ -299,12 +298,14 @@ body {
     margin: 70px 0 70px 40px;
 }
 .clients-part {
+    padding-bottom: 40px;
+}
+.clients-part {
     text-align: center;
-    min-height: 590px;
     background-color: #ebeae8;
 }
 .clients-part h1 {
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
     margin: 0;
     color: #313131;
 }
@@ -320,7 +321,7 @@ body {
 }
 .contacts-part .social-block {
     border: none;
-    color: #ebeae8;
+    margin-left: -16px;
 }
 .contacts-part .social-block span {
     color: #ebeae8;
@@ -363,7 +364,6 @@ body {
     font-weight: 400;
 }
 .contact-form input[type="submit"] {
-    height: 46px;
     width: 150px;
     color: #313131;
     font: 14px "Ubuntu", sans-serif;
@@ -377,7 +377,7 @@ body {
     margin-bottom: 175px;
 }
 .download-brif {
-    margin-bottom: 70px;
+    margin-bottom: 59px;
 }
 .download-brif a {
     color: #ebeae8;
@@ -392,7 +392,7 @@ body {
     margin: 0 0 30px 0;
 }
 .map {
-    height: 675px;
+    height: 482px;
 }
 .collapse-width {
     float: right;
@@ -554,6 +554,7 @@ body {
     }
   .contacts-part .social-block {
       margin-left: 0;
+      margin-top: 20px;
   }
   .container {
       padding-left: 10px;
@@ -564,6 +565,9 @@ body {
   }
   .about-block {
       background-color: #424242;
+  }
+  .contact-form input[type="submit"] {
+      margin: 0 auto;
   }      
 }
 
