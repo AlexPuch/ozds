@@ -175,8 +175,13 @@ body {
     color: #ebeae8;
 }
 .footer-order {
-    margin-left: 55px;
+    padding-left: 55px;
     text-transform: uppercase;
+    text-align: left;
+}
+.footer-contacts {
+    padding-right: 55px;
+    text-align: right;
 }
 .footer-contacts,
 .footer-order,
@@ -190,7 +195,6 @@ body {
 .footer-contacts,
 .footer-order {
     padding-top: 3px;
-    text-align: left;
 }
 .footer-inner {
     padding-top: 40px;
@@ -283,7 +287,8 @@ body {
     font-weight: 300;
     margin: 70px 0 30px 0;
 }
-.about-part h1 {
+.about-part h1,
+.social-part h1 {
     max-width: 50%;
 }
 .contacts-part h1 {
@@ -568,6 +573,12 @@ body {
   }
   .contact-form input[type="submit"] {
       margin: 0 auto;
+  }
+  .footer-order {
+    padding-left: 0;
+  }
+  .footer-contacts {
+    padding-right: 0;
   }      
 }
 
