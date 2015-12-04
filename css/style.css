@@ -99,20 +99,20 @@ body {
     float: left;
 }
 .filter {
-    position: relative;
+    cursor: pointer;
+    text-align: right;
     height: 70px;
-    margin-top: 90px;
+    margin-top: 80px;
+    padding-top: 40px;
 }
 .filter span {
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-    cursor: pointer;
-    font-family: "Ubuntu", sans-serif;
     text-transform: uppercase;
     color: #ffdb01;
 }
-.filter span:hover {
+.filter .glyphicon {
+    margin-right: 5px;
+}
+.filter:hover {
     opacity: 0.7;
 }
 .filter-inner {

@@ -73,6 +73,14 @@ $(document).on("hide.bs.collapse","#myNavbar", function() {
   $(".lang").addClass("show");
   $(".burger").html('<span class="flaticon-menu45"></span>');
 });
+$(document).on("click",".filter", function() {
+  if (!$(this).hasClass("collapsed")) {
+      $(this).html('<span class="glyphicon glyphicon-triangle-top"></span><span>фильтр</span>');
+  } else {
+      $(this).html('<span class="glyphicon glyphicon-triangle-bottom"></span><span>фильтр</span>')
+  }
+});
+
 
 
 //Google maps
