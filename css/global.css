@@ -7086,9 +7086,15 @@ body {
 .hovereffect a {
     text-transform: uppercase;
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
+}
+.overlay span {
+  color: #f1d004;
+  margin-top: 20px;
+  font-size: 20px;
 }
 /*---end hover effect---*/
 .modal-content {

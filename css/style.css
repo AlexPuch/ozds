@@ -484,7 +484,7 @@ body {
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect a, hovereffect p {
+.hovereffect a {
   color: #f1d004;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -493,8 +493,12 @@ body {
   -webkit-transform: translate3d(0,100%,0);
   transform: translate3d(0,100%,0);
 }
-
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.overlay span {
+  color: #f1d004;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.hovereffect:hover a, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
@@ -503,7 +507,8 @@ body {
 .hovereffect a {
     text-transform: uppercase;
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
 }
