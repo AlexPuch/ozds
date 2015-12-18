@@ -531,6 +531,15 @@ body {
 .header {
     padding-top: 20px;
 }
+span.upload {
+    position: absolute;
+    z-index: 999;
+    color: #313131;
+    right: 10px;
+    top: 170px;
+    font-size: 30px;
+    cursor: pointer;
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .social-block {
     border-left: none;

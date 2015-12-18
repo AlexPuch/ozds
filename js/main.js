@@ -80,10 +80,18 @@ $(document).on("click",".filter", function() {
       $(this).html('<span class="glyphicon glyphicon-triangle-bottom"></span><span>фильтр</span>')
   }
 });
-
-
-
+//scroll
+$(document).on("click","ul.menu a", function (event) {
+    if ($('div').hasClass("about-block") && $(this).attr('data-id') != undefined) {
+        event.preventDefault();
+        var id = $(this).attr('data-id'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top-120}, 800);        
+           // window.scrollBy(0,-60);
+    };
+});
 //Google maps
+/*
 var map;
 var marker;
 var theatre = new google.maps.LatLng(50.469494,30.466671);
@@ -239,3 +247,4 @@ function toggleBounce() {
 // google maps initialize
 $('div').hasClass('contacts-part') && initialize();
 
+*/
