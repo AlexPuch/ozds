@@ -422,7 +422,7 @@ body {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .hovereffect .overlay {
@@ -475,7 +475,6 @@ body {
   font-size: 14px;
   background-color: transparent;
   color: #f1d004;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -483,29 +482,18 @@ body {
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
 }
-
-.hovereffect a {
-  color: #f1d004;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
 .overlay span {
   color: #f1d004;
   margin-top: 20px;
   font-size: 20px;
 }
-.hovereffect:hover a, .hovereffect:hover h2 {
+.hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 .hovereffect a {
-    text-transform: uppercase;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -546,6 +534,21 @@ body {
     top: 0;
     margin-bottom: 0;
     opacity: 0;
+}
+button.close {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+}
+.close {
+    color: #ebeae8;
+    opacity: 1;
+    font-size: 35px;
+    z-index: 5000;
+}
+.close:hover {
+    color: #f0cf03;
+    opacity: 1;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .social-block {

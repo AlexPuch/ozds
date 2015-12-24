@@ -1,14 +1,16 @@
 //modal view
 
-/******variant1******
-var activeProjectUrl='';
-$(document).on('click','.overlay a', function(){
-    activeProjectUrl = $(this).attr("href");
+$(document).on('click','.prjct', function(){
+    var activeProjectUrl = $(this).find("a").attr("href"),
+        activeProjectContent = $(this).find(".container").html();
+        
+    $(".modal-body").append(activeProjectContent);
     history.pushState({},'',activeProjectUrl); //show url as a real
-    $('#content-target').load("activeProjectUrl #project-content"); //load content
 });
-$(document).on('hidden.bs.modal', function (){
-    history.back();
+
+$(document).on('hide.bs.modal', function (){
+/*    history.back();    */
+    $(".modal-body").empty();
 });
 
 // MADAL FIX --- add paddint to element with position:fixed
@@ -21,48 +23,6 @@ $(document).on('show.bs.modal', function(){
 $(document).on('hidden.bs.modal', function (){
     $($targetClass).css("padding-right","0");
 });
-*/
-
-/******variant2******
-$('#content-target').load("./cherity.html", function(result) {
-    var obj = $(this).find("#project-content"),
-        html = obj.html();
-    $(this).append($("<div>").text(html));
-});
-*/
-
-/******variant3******
-/*
-(function($){
-        var http = "http:",
-            https = "https:",
-            rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script/gi,
-            proto = local.protocol,
-            otherProtoUri = new RegExp("\\b" + (proto === http ? https : http) + "(//[a-z\\d.-]+)", "gi");
-        $.fn.protocolModifyLoad = function(url, yesIKnowThisFragile, selector) {
-            var self = this;
-
-            if ( !this.length || !yesIKnowThisFragile) {
-                return this;
-            }
-
-            $.ajax({
-                url: url,
-                type: "GET",
-                dataType: "html",
-                complite: function(res,status) {
-                    if (status === "success" || status === "notmodified") {
-                        var response = res.responseText.replace(otherProtoUri, proto + "$1");
-                        self.html( selector ?
-                            jQuery("<div").append(response.replace(rscript, "")).find(selector) : response);
-                    }
-                }
-            });
-
-            return this;
-        };
-    })(jQuery);
-*/
 
 //collapse
 $(document).on("show.bs.collapse","#myNavbar", function() {
@@ -90,6 +50,14 @@ $(document).on("click","ul.menu a", function (event) {
            // window.scrollBy(0,-60);
     };
 });
+//scroll up in the modal
+$(document).on("click","a[href='#top']", function (event) {
+    event.preventDefault();
+    var target;
+    $('div').hasClass("modal")?target='#modalView':target='body,html';
+    $(target).animate({scrollTop: 0}, 800);
+});
+
 //Google maps
 /*
 var map;
