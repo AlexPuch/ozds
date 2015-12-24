@@ -531,7 +531,7 @@ body {
 .header {
     padding-top: 20px;
 }
-span.upload {
+.upload {
     position: absolute;
     z-index: 999;
     color: #313131;
@@ -539,6 +539,13 @@ span.upload {
     top: 170px;
     font-size: 30px;
     cursor: pointer;
+}
+.upload input {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    margin-bottom: 0;
+    opacity: 0;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .social-block {
