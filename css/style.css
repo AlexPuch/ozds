@@ -550,6 +550,9 @@ button.close {
     color: #f0cf03;
     opacity: 1;
 }
+#modalView {
+    background-color: RGBA(0,0,0,0.7);
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .social-block {
     border-left: none;

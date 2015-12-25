@@ -44,15 +44,17 @@
     <div class="container">
       <!--start second navigation-->
       <div class="row">
-        <div class="filter" data-toggle="collapse" href="#myFilter" aria-expanded="false" aria-controls="myFilter">
+        <div class="filter" data-toggle="collapse" data-target="#myFilter" aria-expanded="false" aria-controls="myFilter">
           <span class="glyphicon glyphicon-triangle-bottom"></span><span>фильтр</span>
         </div>
-        <div class="filter-inner collapse" id="myFilter">
-          <a href="./logos/">логотип</a>
-          <a href="./identity/">фирменный стиль</a>
-          <a href="./posters/">плакат</a>
-          <a href="./catalogs/">буклет</a>
-          <a href="./pack/">упаковка</a>
+        <div class="collapse" id="myFilter">
+          <div class="filter-inner">
+            <a href="./logos/">логотип</a>
+            <a href="./identity/">фирменный стиль</a>
+            <a href="./posters/">плакат</a>
+            <a href="./catalogs/">буклет</a>
+            <a href="./pack/">упаковка</a>
+          </div>
         </div>
       </div>
       <!--end second navigation-->

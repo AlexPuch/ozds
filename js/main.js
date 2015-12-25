@@ -9,7 +9,7 @@ $(document).on('click','.prjct', function(){
 });
 
 $(document).on('hide.bs.modal', function (){
-/*    history.back();    */
+    history.back();
     $(".modal-body").empty();
 });
 
@@ -21,7 +21,7 @@ $(document).on('show.bs.modal', function(){
     $($targetClass).css("padding-right",scrollWidth);
 });
 $(document).on('hidden.bs.modal', function (){
-    $($targetClass).css("padding-right","0");
+    $($targetClass,"body").css("padding-right","0");
 });
 
 //collapse
@@ -29,7 +29,7 @@ $(document).on("show.bs.collapse","#myNavbar", function() {
   $(".lang").removeClass("show");
   $(".burger").html('<span>&times;</span>');
 });
-$(document).on("hide.bs.collapse","#myNavbar", function() {
+$(document).on("hidden.bs.collapse","#myNavbar", function() {
   $(".lang").addClass("show");
   $(".burger").html('<span class="flaticon-menu45"></span>');
 });
@@ -59,7 +59,7 @@ $(document).on("click","a[href='#top']", function (event) {
 });
 
 //Google maps
-/*
+
 var map;
 var marker;
 var theatre = new google.maps.LatLng(50.469494,30.466671);
@@ -215,4 +215,3 @@ function toggleBounce() {
 // google maps initialize
 $('div').hasClass('contacts-part') && initialize();
 
-*/
